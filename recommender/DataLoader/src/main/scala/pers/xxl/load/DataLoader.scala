@@ -1,4 +1,4 @@
-package pers.xxl.recommender
+package pers.xxl.load
 
 import com.mongodb.casbah.commons.MongoDBObject
 import com.mongodb.casbah.{MongoClient, MongoClientURI}
