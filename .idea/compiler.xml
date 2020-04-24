@@ -6,7 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="businessServer" />
         <module name="DataLoader" />
+        <module name="KafakaStreaming" />
+        <module name="OfflineRecommender" />
+        <module name="OnlineRecommender" />
+        <module name="StatisticsRecommender" />
       </profile>
     </annotationProcessing>
   </component>

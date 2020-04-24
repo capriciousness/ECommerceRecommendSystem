@@ -16,6 +16,7 @@
         <module>StatisticsRecommender</module>
         <module>OfflineRecommender</module>
         <module>OnlineRecommender</module>
+        <module>KafakaStreaming</module>
     </modules>
 
     <dependencyManagement>
