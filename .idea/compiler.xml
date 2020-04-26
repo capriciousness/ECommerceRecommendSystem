@@ -9,6 +9,7 @@
         <module name="businessServer" />
         <module name="ContentRecommender" />
         <module name="DataLoader" />
+        <module name="ItemCFRecommender" />
         <module name="KafakaStreaming" />
         <module name="OfflineRecommender" />
         <module name="OnlineRecommender" />

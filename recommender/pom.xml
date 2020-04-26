@@ -18,6 +18,7 @@
         <module>OnlineRecommender</module>
         <module>KafakaStreaming</module>
         <module>ContentRecommender</module>
+        <module>ItemCFRecommender</module>
     </modules>
 
     <dependencyManagement>

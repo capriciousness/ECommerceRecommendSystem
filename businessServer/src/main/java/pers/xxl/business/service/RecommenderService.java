@@ -21,7 +21,7 @@ public class RecommenderService {
     private MongoClient mongoClient;
 
     public List<Recommendation> getHotRecommendations(HotRecommendationRequest request) {
-        // 获取热门电影的条目
+        // 获取热门商品的条目
         MongoCollection<Document> rateMoreMoviesRecentlyCollection = mongoClient.getDatabase(Constant.MONGODB_DATABASE).getCollection(Constant.MONGODB_RATE_MORE_PRODUCTS_RECENTLY_COLLECTION);
         FindIterable<Document> documents = rateMoreMoviesRecentlyCollection.find().sort(Sorts.descending("yearmonth")).limit(request.getSum());
 
@@ -35,7 +35,7 @@ public class RecommenderService {
 
     public List<Recommendation> getRateMoreRecommendations(RateMoreRecommendationRequest request) {
 
-        // 获取评分最多电影的条目
+        // 获取评分最多商品的条目
         MongoCollection<Document> rateMoreProductsCollection = mongoClient.getDatabase(Constant.MONGODB_DATABASE).getCollection(Constant.MONGODB_RATE_MORE_PRODUCTS_COLLECTION);
         FindIterable<Document> documents = rateMoreProductsCollection.find().sort(Sorts.descending("count")).limit(request.getSum());
 
