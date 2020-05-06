@@ -7,6 +7,7 @@
         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
     <display-name>recommender</display-name>
+     
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:application.xml</param-value>
@@ -47,4 +48,9 @@
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/index.html</location>
+    </error-page>
 </web-app>

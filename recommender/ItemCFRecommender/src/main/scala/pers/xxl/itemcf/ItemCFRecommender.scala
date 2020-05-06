@@ -3,7 +3,7 @@ package pers.xxl.itemcf
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
 
-case class ProductRating( userId: Int, productId: Int, score: Double, timestamp: Int )
+case class ProductRating( userId: Int, productId: Int, score: Double, timestamp: BigInt )
 case class MongoConfig( uri: String, db: String )
 
 // 定义标准推荐对象
